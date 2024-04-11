@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gellary_challenge/src/presentation/view/common/app_fade_shimmer.dart';
 import 'package:gellary_challenge/src/presentation/view/pages/home/widgets/gallery_grid.dart';
 
+import '../../../../../core/config/l10n/generated/l10n.dart';
 import '../../../../../data/models/gallery_model.dart';
 import '../../../../view_model/blocs/data_bloc/api_data_bloc.dart';
 import '../../../../view_model/blocs/data_bloc/api_data_state.dart';
@@ -49,7 +50,7 @@ class HomeBody extends StatelessWidget {
                   },
                 );
               }
-              return const SliverToBoxAdapter(child: TextWidget(text: 'No data found'));
+              return SliverToBoxAdapter(child: TextWidget(text: S.of(context).home_page_no_data));
             },
             error: (value) => SliverToBoxAdapter(child: TextWidget(text: value.error?.errorMessage ?? '')),
             orElse: () => const SliverToBoxAdapter(),

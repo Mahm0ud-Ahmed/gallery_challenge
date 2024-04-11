@@ -60,6 +60,66 @@ class S {
     );
   }
 
+  /// `No data found`
+  String get home_page_no_data {
+    return Intl.message(
+      'No data found',
+      name: 'home_page_no_data',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Gallery`
+  String get login_page_my_gallery {
+    return Intl.message(
+      'My Gallery',
+      name: 'login_page_my_gallery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gallery`
+  String get home_page_dialog_gallery_btn {
+    return Intl.message(
+      'Gallery',
+      name: 'home_page_dialog_gallery_btn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Camera`
+  String get home_page_dialog_camera_btn {
+    return Intl.message(
+      'Camera',
+      name: 'home_page_dialog_camera_btn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Upload`
+  String get home_page_upload_btn {
+    return Intl.message(
+      'Upload',
+      name: 'home_page_upload_btn',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Log out`
+  String get home_page_logout_btn {
+    return Intl.message(
+      'Log out',
+      name: 'home_page_logout_btn',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Continue with request`
   String get continue_100_message {
     return Intl.message(

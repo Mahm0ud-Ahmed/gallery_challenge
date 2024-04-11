@@ -59,6 +59,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "The server acting as a gateway or proxy timed out waiting for a response from the upstream server"),
         "gone_410_message": MessageLookupByLibrary.simpleMessage(
             "The requested resource is no longer available and has been permanently removed"),
+        "home_page_dialog_camera_btn":
+            MessageLookupByLibrary.simpleMessage("Camera"),
+        "home_page_dialog_gallery_btn":
+            MessageLookupByLibrary.simpleMessage("Gallery"),
+        "home_page_logout_btn": MessageLookupByLibrary.simpleMessage("Log out"),
+        "home_page_no_data":
+            MessageLookupByLibrary.simpleMessage("No data found"),
+        "home_page_upload_btn": MessageLookupByLibrary.simpleMessage("Upload"),
         "http_version_not_supported_505_message":
             MessageLookupByLibrary.simpleMessage(
                 "The requested HTTP version is not supported by the server"),
@@ -71,6 +79,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "The request did not specify the length of its content, which is required by the requested resource"),
         "locked_423_message": MessageLookupByLibrary.simpleMessage(
             "The requested resource is locked and may not be modified"),
+        "login_page_my_gallery":
+            MessageLookupByLibrary.simpleMessage("My Gallery"),
         "loop_detected_508_message": MessageLookupByLibrary.simpleMessage(
             "The server has detected a loop in the request processing chain, which could indicate a misconfiguration"),
         "method_not_allowed_405_message": MessageLookupByLibrary.simpleMessage(

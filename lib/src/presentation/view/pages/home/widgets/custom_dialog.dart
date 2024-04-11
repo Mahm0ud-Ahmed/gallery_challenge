@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gellary_challenge/src/core/config/l10n/generated/l10n.dart';
 import 'package:gellary_challenge/src/core/utils/api_info.dart';
 import 'package:gellary_challenge/src/core/utils/enums.dart';
 import 'package:gellary_challenge/src/core/utils/extension.dart';
@@ -109,13 +110,13 @@ class _CustomDialogState extends State<CustomDialog> {
                                       CustomButton(
                                         width:0,
                                         onPressed: () => pickImage(ImageSource.gallery),
-                                        text: 'Gallery',
+                                        text: S.of(context).home_page_dialog_gallery_btn,
                                         image: Assets.images.gallery,
                                       ),
                                       CustomButton(
                                         width: 180,
                                         onPressed: () => pickImage(ImageSource.camera),
-                                        text: 'Camera',
+                                        text: S.of(context).home_page_dialog_camera_btn,
                                         image: Assets.images.camera,
                                       ),
                                     ],

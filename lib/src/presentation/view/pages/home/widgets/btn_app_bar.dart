@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gellary_challenge/src/core/config/injector.dart';
+import 'package:gellary_challenge/src/core/config/l10n/generated/l10n.dart';
 import 'package:gellary_challenge/src/core/services/storage_service.dart';
 import 'package:gellary_challenge/src/core/utils/extension.dart';
 import 'package:gellary_challenge/src/presentation/view/pages/login/login_page.dart';
@@ -23,7 +24,7 @@ class BtnAppBar extends StatelessWidget {
                 context.push(const LoginPage());
               });
             },
-            text: 'Log out',
+            text: S.of(context).home_page_logout_btn,
             image: Assets.images.logout,
           ),
         ),
@@ -31,7 +32,7 @@ class BtnAppBar extends StatelessWidget {
         Flexible(
           child: CustomButton(
             onPressed: () => isDialogOpen.value = true,
-            text: 'Upload',
+            text: S.of(context).home_page_upload_btn,
             image: Assets.images.upload,
           ),
         ),

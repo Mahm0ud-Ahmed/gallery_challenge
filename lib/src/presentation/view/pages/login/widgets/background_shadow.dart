@@ -1,12 +1,11 @@
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gellary_challenge/src/core/utils/extension.dart';
 import 'package:gellary_challenge/src/core/utils/layout/information_page.dart';
 
 import '../../../../../core/config/assets/assets.gen.dart';
+import '../../../../../core/utils/constant.dart';
 import '../../../common/image_widget.dart';
 
 class BackgroundShadow extends StatelessWidget {
@@ -48,7 +47,7 @@ class BackgroundShadow extends StatelessWidget {
                 borderRadius: BorderRadius.circular(info.screenHeight),
                 boxShadow: const [
                   BoxShadow(
-                    color: Color(0xffFFDADA),
+                    color: kFirstColor,
                     blurRadius: 100,
                     spreadRadius: 10,
                   ),
@@ -68,7 +67,7 @@ class BackgroundShadow extends StatelessWidget {
                 borderRadius: BorderRadius.circular(info.screenHeight),
                 boxShadow: const [
                   BoxShadow(
-                    color: Color(0xffDDCDFF),
+                    color: kSecondColor,
                     blurRadius: 100,
                     spreadRadius: 10,
                     // offset: Offset(0, 0),
@@ -95,7 +94,6 @@ class BackgroundShadow extends StatelessWidget {
             ),
           ),
         ),
-        
         PositionedDirectional(
           top: info.screenHeight / (context.isMobile ? 2.2 : 2.4),
           start: 0,

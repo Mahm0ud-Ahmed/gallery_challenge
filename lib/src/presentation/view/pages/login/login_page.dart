@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gellary_challenge/src/core/utils/layout/responsive_layout.dart';
 
-import '../../common/background_shadow.dart';
+import 'widgets/background_shadow.dart';
 import 'widgets/body_login.dart';
 import 'widgets/camera_threads.dart';
 

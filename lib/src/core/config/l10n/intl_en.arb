@@ -1,5 +1,11 @@
 {
     "app_name": "Gallery Challenge",
+    "home_page_no_data": "No data found",
+    "login_page_my_gallery": "My Gallery",
+    "home_page_dialog_gallery_btn": "Gallery",
+    "home_page_dialog_camera_btn": "Camera",
+    "home_page_upload_btn": "Upload",
+    "home_page_logout_btn": "Log out",
 
     "continue_100_message": "Continue with request",
     "switching_protocols_101_message": "Switching protocols",

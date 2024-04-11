@@ -6,6 +6,7 @@ import 'package:gellary_challenge/src/presentation/view/pages/home/widgets/backg
 import 'package:gellary_challenge/src/presentation/view/pages/home/widgets/home_body.dart';
 import 'package:gellary_challenge/src/presentation/view_model/blocs/data_bloc/api_data_bloc.dart';
 
+import '../../../../core/utils/constant.dart';
 import '../../../../data/models/gallery_model.dart';
 import 'widgets/app_bar_home.dart';
 import 'widgets/custom_dialog.dart';
@@ -45,8 +46,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
               end: Alignment.bottomCenter,
               stops: [0.4, 1.0],
               colors: [
-                Color(0xffDDCDFF),
-                Color(0xffFFDADA),
+                kSecondColor,
+                kFirstColor,
               ],
             ),
           ),

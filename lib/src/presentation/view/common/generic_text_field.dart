@@ -21,7 +21,7 @@ class GenericTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
-      cursorColor: kTextPrimaryColor,
+      cursorColor: kTextColor,
       decoration: InputDecoration(
         border: InputBorder.none,
         filled: true,

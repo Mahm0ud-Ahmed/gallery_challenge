@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gellary_challenge/src/core/utils/extension.dart';
 
 import '../../../../../core/config/assets/assets.gen.dart';
+import '../../../../../core/utils/constant.dart';
 import '../../../common/image_widget.dart';
 import '../../../common/text_widget.dart';
 
@@ -26,7 +27,7 @@ class UserAppBar extends StatelessWidget {
           child: DecoratedBox(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(250),
-              color: const Color(0xffDDCDFF),
+              color: kSecondColor,
             ),
             child: Padding(
               padding: const EdgeInsets.all(16),

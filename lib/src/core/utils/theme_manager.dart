@@ -10,15 +10,8 @@ class ThemeManager {
 
   void _setThemeData() {
     _themeData = ThemeData(
-      scaffoldBackgroundColor: kMainColor,
       textTheme: _initTextStyle,
       useMaterial3: true,
-      colorScheme: ColorScheme.fromSeed(
-        seedColor: kSecondaryColor,
-        brightness: Brightness.light,
-        primary: kTextSubColor,
-        surfaceTint: kTextSubColor,
-      ),
     );
   }
 
@@ -41,43 +34,43 @@ class ThemeManager {
   TextTheme get _initTextStyle {
     return const TextTheme(
       headlineSmall: TextStyle(
-        color: Color(0xff4A4A4A),
+        color: kTextColor,
         fontWeight: FontWeight.w700,
         fontSize: 30,
         overflow: TextOverflow.visible,
       ),
       headlineLarge: TextStyle(
-        color: Color(0xff4A4A4A),
+        color: kTextColor,
         fontSize: 50,
         overflow: TextOverflow.visible,
         fontWeight: FontWeight.w700,
       ),
       titleMedium: TextStyle(
-        color: Color(0xff4A4A4A),
+        color: kTextColor,
         fontWeight: FontWeight.w400,
         fontSize: 17,
         overflow: TextOverflow.visible,
       ),
       labelLarge: TextStyle(
-        color: Color(0xff4A4A4A),
+        color: kTextColor,
         fontWeight: FontWeight.bold,
         fontSize: 14,
         overflow: TextOverflow.visible,
       ),
       bodyLarge: TextStyle(
-        color: Color(0xff4A4A4A),
+        color: kTextColor,
         fontWeight: FontWeight.w400,
         fontSize: 19,
         overflow: TextOverflow.visible,
       ),
       bodyMedium: TextStyle(
-        color: Color(0xff4A4A4A),
+        color: kTextColor,
         fontWeight: FontWeight.bold,
         fontSize: 20,
         overflow: TextOverflow.visible,
       ),
       bodySmall: TextStyle(
-        color: Color(0xff4A4A4A),
+        color: kTextColor,
         fontWeight: FontWeight.w400,
         fontSize: 12,
         overflow: TextOverflow.visible,

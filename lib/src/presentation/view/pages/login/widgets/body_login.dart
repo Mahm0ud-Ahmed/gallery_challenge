@@ -6,6 +6,7 @@ import 'package:gellary_challenge/src/presentation/view/pages/login/login_contro
 import 'package:gellary_challenge/src/presentation/view/pages/login/widgets/fields_login.dart';
 import 'package:gellary_challenge/src/presentation/view_model/blocs/data_bloc/api_data_bloc.dart';
 
+import '../../../../../core/config/l10n/generated/l10n.dart';
 import '../../../../view_model/blocs/data_bloc/api_data_state.dart';
 import '../../../common/text_widget.dart';
 
@@ -42,7 +43,7 @@ class _BodyLoginState extends State<BodyLogin> {
             SizedBox(
               width: context.isMobile ? 200 : 400,
               child: TextWidget(
-                text: 'My Gallery',
+                text: S.of(context).login_page_my_gallery,
                 textAlign: TextAlign.center,
                 style: context.headlineL,
               ),
@@ -88,7 +89,7 @@ class _BodyLoginState extends State<BodyLogin> {
                               child: state.maybeMap(
                                 loading: (_) => const CircularProgressIndicator(color: Colors.white),
                                 orElse: () => TextWidget(
-                                  text: 'LOG IN',
+                                  text: 'SUBMIT',
                                   style: context.bodyM!.copyWith(color: Colors.white),
                                 ),
                               ),

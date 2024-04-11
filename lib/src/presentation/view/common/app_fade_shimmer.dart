@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 // Package imports:
 import 'package:fade_shimmer/fade_shimmer.dart';
 
+import '../../../core/utils/constant.dart';
+
 // Project imports:
 
 class AppFadeShimmer extends StatelessWidget {
@@ -30,8 +32,8 @@ class AppFadeShimmer extends StatelessWidget {
         width: width,
         height: height,
         radius: radius,
-        highlightColor: const Color(0xffFFDADA),
-        baseColor: const Color(0xffDDCDFF),
+        highlightColor: kFirstColor,
+        baseColor: kSecondColor,
         millisecondsDelay: millisecondsDelay,
       ),
     );
