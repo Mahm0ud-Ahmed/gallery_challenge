@@ -14,9 +14,6 @@ import 'package:flutter/services.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
-  /// File path: assets/images/background.svg
-  SvgGenImage get background => const SvgGenImage('assets/images/background.svg');
-
   /// File path: assets/images/camera.png
   AssetGenImage get camera => const AssetGenImage('assets/images/camera.png');
 
@@ -49,7 +46,7 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<dynamic> get values =>
-      [background, camera, cameraLogin, circuler, gallery, imagePlaceholder, logout, threads, upload, user, video];
+      [camera, cameraLogin, circuler, gallery, imagePlaceholder, logout, threads, upload, user, video];
 }
 
 class Assets {
